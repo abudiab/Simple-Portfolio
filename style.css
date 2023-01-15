@@ -162,3 +162,24 @@ nav ul li a:hover {
 	height: 500px;
 	background: #fff;
 }
+
+#contact {
+	height: 500px;
+	background: #4c4347 ;
+	color: #fff;
+}
+
+#contact .section-content {
+	display: flex;
+	justify-content: space-around;
+}
+
+#contact h2 {
+
+	color: #fff;
+}
+
+#contact i {
+	margin-right: 10px;
+}
+
