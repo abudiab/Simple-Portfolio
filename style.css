@@ -6,6 +6,10 @@
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: 'Poppins', sans-serif;
 	background: #f2f2f2;
@@ -154,14 +158,83 @@ nav ul li a:hover {
 }
 
 #projects {
-	height: 500px;
+	height: 1000px;
 	background: #4c4347;
 }
 
+#projects .section-content {
+	display: flex;
+	flex-direction: column;
+}
+
+#projects h2 {
+	color: #fff;
+	margin-top: 45px;
+	font-size: 32px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.projects-list {
+	margin-top: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.project-card {
+	width: 300px;
+    height: 380px;
+    background: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    transition: transform 0.5s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img.project-img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 50%;
+}
+
+.project-card .project-title {
+    margin-top: 10px;
+    padding: 0px 30px;
+}
+
+.project-card .project-description {
+    margin-top: 10px;
+    padding: 0px 30px;
+}
+
+.project-card .links {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 40px;
+}
+
+.project-card .links i {
+	color: #000;
+}
+
 #statement {
-	height: 500px;
+	height: 650px;
 	background: #fff;
 }
+
+/*To be changed later*/
+#statement .section-text {
+	max-width: 50%;
+	margin-top: 50px;
+}
+/**/
 
 #contact {
 	height: 500px;
